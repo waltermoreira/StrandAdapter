@@ -1,0 +1,11 @@
+# file: metadata.yml
+
+---
+name: at_srna
+version: 0.1
+type: query
+main_module: main.py
+url: http://mpss.udel.edu/
+description: 'Arabidopsis thalaiana strand information'
+whitelist:
+  - mpss.udel.edu
