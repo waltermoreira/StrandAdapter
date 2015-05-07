@@ -26,7 +26,7 @@ def search(arg):
     # 'http://mpss.udel.edu/web/php/pages/json.php?SITE=at_sRNA&list=strand&format=json'
 
     # The remote service takes additional parameters that we will pass from input args
-    url = ('http://mpss.udel.edu/web/php/pages/json.php?SITE={site}&list={list]&format=json'.format(site=input_site, list=input_list))
+    url = ('http://mpss.udel.edu/web/php/pages/json.php?SITE={site}&list={list}&format=json'.format(site=input_site, list=input_list))
 
     rqst = requests.get(url)
 
