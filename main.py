@@ -25,6 +25,7 @@ def search(arg):
     # The remote service takes additional parameters that we will pass from input args
     url = ('http://mpss.udel.edu/web/php/pages/json.php?SITE={site}&list={list}&format=json')
 
+    print url
     rqst = requests.get(url)
 
     # If the response status is not 2xx, raise an exception with the
