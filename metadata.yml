@@ -6,6 +6,24 @@ version: 0.5
 type: query
 main_module: main.py
 url: http://mpss.udel.edu/
-description: 'Arabidopsis thalaiana strand information'
+description: Basic Metadata
 whitelist:
   - mpss.udel.edu
+endpoints:
+  /search:
+    summary: Small RNA basic metadata
+    description: Basic metadata
+    parameters:
+      - name: site
+        description: Site
+        type: string
+        required: true
+        enum:
+          - at_sRNA
+      - name: list
+        description: List
+        type: string
+        enum:
+          - strand
+          - expression
+          - genomic
