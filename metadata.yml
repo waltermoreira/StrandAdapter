@@ -9,6 +9,7 @@ url: http://mpss.udel.edu/
 description: Basic Metadata
 whitelist:
   - mpss.udel.edu
+validate_request: true
 endpoints:
   /search:
     summary: Small RNA basic metadata
@@ -23,6 +24,7 @@ endpoints:
       - name: list
         description: List
         type: string
+        required: true
         enum:
           - strand
           - expression
